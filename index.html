@@ -1,0 +1,99 @@
+<!-- HTML comeco00\\//|||| ΔΔΔ VVV ⬇⬇⬇⬇⬇/^[a-zA-Z\s]+$/-->
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execircio</title>
+    <style>
+        body {
+            background-color: rgb(85, 84, 84);
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        header {
+            color: #051ab5;
+            text-align: center;
+
+        }
+
+        
+        section {
+            background-color: #ffffff;
+            width: 520px;
+            margin: auto;
+            border-radius: 4px;
+            padding: 6px;
+
+        }
+
+        section > div {
+            margin: 4px;
+        }
+     
+
+    
+    </style>
+ </head>
+ <body>
+    <header>
+        <h1>Verificador de Numeros</h1>
+    </header>
+
+    <section>
+        <div>
+            
+            Digite alguns Numeros: <input type="number" name="nu1" id="nu1">   <br>
+            
+            <input type="button" value="Conferir" onclick="Conferir()">
+
+
+            
+            
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+
+    <script>
+        let numeros = []
+
+        function Conferir() {
+            const nu = Number(document.getElementById('nu1').value)
+            document.getElementById('nu1').valur = ''
+            const res = document.getElementById('res')
+
+            numeros.push(nu)
+
+
+            if (numeros.length >= 6) {
+                let maior = Math.max(...numeros)
+                let menor = Math.min(...numeros)
+                let soma = numeros.reduce((acc, val) => acc + val, 0)
+                let media = soma / numeros.length
+
+
+                res.innerHTML = `Numeros digitados ${numeros.length}. <br> `
+                res.innerHTML += `O maior numero digitado foi ${maior}. <br> `
+                res.innerHTML += `O menor numero digitado foi ${menor}. <br> `
+                res.innerHTML += `A soma de todos os numero foi ${soma}. <br> `
+                res.innerHTML += `A media dos numeros foi ${media.toFixed(2)}. <br>` 
+                
+            } 
+
+
+
+            FAZER EXERCICIO SEM FALTAR!!!!
+            FAZER EXERCICIO SEM FALTAR!!!!
+            FAZER EXERCICIO SEM FALTAR!!!!
+            
+
+
+        }
+           
+
+    </script>
+    
+ </body>
+ </html>
