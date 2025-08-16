@@ -1,0 +1,852 @@
+#
+EXERCICIOS AULA00!W
+# execircios aula!!!
+from datetime import date
+from random import randint
+import time  
+from math import factorial import re 
+import math 
+import random
+import string
+
+
+# dividir videos de nomeia no celular cada um pra fica mais facil de lembra algo
+-.wi,3 vezes apagado, libera espço
+
+#aqui mesmo
+
+#Otavio miranda
+#aula 35 = 1.
+#aula 36 = 2.
+#aula 37 = 3.
+#aula 38 = 4.
+#aula 39 = 5.
+#aula 40 = 6.
+#aual 41 = 7.
+#aula 42 = 8.
+#aula 43 = 9.
+#aula 44 = 10.
+#aula 45 = 11.    from dataclasse import dataclasse
+#aula 46 = 12.    metaclass
+#--;
+
+
+#
+#HTML e CSS aula 01 Gustavo guanabara
+
+#AULAS html5 e css3
+#Anotacoes;execircios.
+
+#anot,ex01
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro exercicio</title>
+</head>
+<body>
+    <h1>Ola, mundo!</h1>
+    <hr>
+    <p>
+        Esse e meu primeiro documento html estou muito feliz
+    </p>
+    <p>Este e um momento unico! estou criando um site</p>
+</body>
+</html>
+
+FAZER OS EXERCICIO DO GIMP(APP)
+
+..;;;;
+
+
+
+
+ div {
+            display: inline-block;
+            background-color: rgb(120, 120, 120);
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+
+        }
+        div:hover {
+            background-color: rgb(162, 0, 255);
+        }
+
+Texto escodindo..
+  body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+
+        }
+
+        div:hover {
+            color: rgb(250, 0, 0);
+        }
+
+#antex Pseudo elemento
+ /*
+        # = id
+        . = class
+        : = pseudo class
+        :: = pseudo element
+        > = clidren(filho)
+        */
+#Emmet: Envelope com a
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: rgb(255, 166, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(154, 0, 210);
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: rgb(0, 64, 255);
+        }
+        a::after { 
+            content: '  [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(108, 44, 1);
+        }
+        .especial {
+            background-color: rgb(105, 80, 197);
+            color: rgb(255, 255, 255);
+        }
+#Emmet: Envelope com a
+#anotex03 Caixas na pratica
+ /*
+
+        }
+        a { /* Inline level */
+            display: inline-block;
+
+            padding: ;
+            border: ;
+
+
+           
+#anotex 04 Grupignhg tags
+ body {
+            font-family: sans-serif;
+            background-color: rgb(75, 75, 75);
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(77, 77, 77);
+            padding: 3px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article {
+            background-color: rgba(121, 120, 120, 0.634);
+            padding: 5px;
+        
+        }
+        article > aside {
+            background-color: rgba(72, 72, 72, 0.596);
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+;;;;;
+  /*#Emmet: Envelope com a
+        dashed = pontilhado em quadrado
+        dotted = pontilhado em circulo
+        double = linha dupla
+        groove = marge 3d
+        */
+        h1 { /* box-level */
+            background-color: rgb(250, 14, 171);
+            height: 300px;
+            width: 300px;
+
+            border:10px solid darkslategray;
+
+
+            padding :10px;
+
+
+           margin: 20px 20px 40px 20px;
+
+           outline: 5px dashed salmon;
+
+        }
+        a { /* Inline level */
+            display: inline-block;
+
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: blueviolet;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+ box-shadow: 2px 3px 5px rgba(255, 251, 251, 0.934);
+
+
+
+#anotex01 caixa de vertice 27/05/2025
+ div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+
+ <header></header><nav></nav><main></main><footer></footer>
+<body><section id="noticias">
+    <article>
+        <aside>
+        
+ img {
+            display: block;
+            margin: auto;
+#imagem centro
+#block vai para baixo, inline vai para cima.
+
+
+#Emmet: Envelope com a
+#depois instalar o gimp e assistir as aulas que faltou
+
+#anot border 
+ border: 20px solid transparent;
+            padding: 10px;
+          
+
+            border-image: url('javascript_logo.svg') 27 repeat;
+
+
+
+
+#JavaScript 00
+#primeiros comandos e Tipos d variaveis e dados.
+
+#MOD B Variaveis e tratamento de dados
+<script>
+        window.alert('Minha primeria mensagem')
+        window.confirm('Esta gostando de JS')
+        window.prompt('Qual e seu nome:')
+
+#aulanot
+ var nome = window.prompt('Qual e seu nome:')
+        window.alert('E um grande prazer em te conhecer, ' + nome)
+
+ typeof = (tipo)
+
+#aulanot tratamento de dados
+
+  //String(n) e Number(n)
+      var n1 = Number.parseInt(window.prompt('Digite um numero: ')) //string
+      var n2 = Number.parseInt(window.prompt('Digite outro numero: '))
+      var s = n1 + n2
+      window.alert(`A soma entre ${n1} e ${n2} e igual a ${s}`) //concatenaçao
+     s.lenght //Conta letras
+     s.toUpperCase() //Letra Maiusculas
+     s.toLowerCase() //letra minusculas
+---
+ var nome = window.prompt('Qual e seu nome: ')
+        document.write(`Ola <strong>${nome}</strong> seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em maiusculas e ${nome.toUpperCase()}`)
+        //n1.toLocaleString('pr-BR', {style: 'currency', currency: 'BRL'})
+
+
+#aulaant Introduçao a DOM mod C
+ 
+ window.document.write()
+
+  /*
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+         window.document.write('Esta escrito assim: ' + p1.innerText) // pega 
+        // document.write(p1.innerHTML) //Pega tudo
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+       var d = window.document.getElementsByClassName('msg')[0]
+       d.innerHTML = 'ola!'
+       */
+      var d = window.document.querySelector('div#msg')
+      d.style.background = 'blue'
+      d.innerHTML = 'ola, mundo'
+
+#aulaant Eventos DOM
+ <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Soma" onclick="somar()">
+    <div id="res">Resultado</div>
+
+ var ar = window.document.getElementById('area')
+         ar.addEventListener('click', clicar)
+         ar.addEventListener('mouseenter', entrar)
+         ar.addEventListener('mouseout', sair)
+
+        function clicar() {
+            ar.innerText = 'clicou'
+            ar.style.background = 'red'
+
+        }
+        function entrar() {
+            ar.innerText = 'entrou'
+
+ function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value) 
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma  de ${n1} mais ${n2} e igual a  ${s}`
+
+# Erro que pode acontecer ao passa para numero(Int) = ('prin').value) || 0;
+
+
+#aulanot MOD D
+
+var pais = 'suiça'
+console.log(`Vivendo em ${pais}`)
+
+if (pais == 'brasil') {
+    console.log('Brasileiro')
+} else {
+    console.log('Voce e estrangeiro')
+}
+
+
+function calcular(){
+            var txtv = window.document.getElementById('txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade altual e de <strong>${vel}Km/h</strong></p>`
+            if (vel > 70) {
+                res.innerHTML += `<p>Voce esta <strong>MULTADO</strong> por excesso de velocidade</p>`
+            }
+            res.innerH
+       TML += `<p>Dirija com cinto de segurança</p>`
+
+
+
+#aula anot Condicoes part 2
+
+if (idade > 18 && idade <= 65) {
+    console.log('voto obrigatorio')
+}
+var agora = new Date()
+var hora = agora.getHours()
+console.log(`Afora sao exatamente ${hora} horas.`)
+if (hora < 12) {
+    console.log('Bom dia')
+} else if (hora <= 18) {
+    console.log('Boa tarde')
+
+|||||||||
+
+switch(diaSem) {
+    case 0:
+        console.log('Domingo')
+        break           /* OBRIGATORIO */
+    case 1:
+        console.log('segunda')
+        break
+
+#aulanot exercicios 1
+
+ var msg = window.document.getElementById('msg')
+    var image = window.document.getElementById('imagem')
+    var data = new Date()
+    //var hora = data.getHours()
+    var hora = 15
+    msg.innerHTML = `Agora sao ${hora} horas.`
+    if (hora >= 0 && hora < 12) {
+        // boma dia
+    } else if (hora >= 12 && hora <= 18) {
+        //boa tarde
+        image.src = 'boatarde.jpg'
+        document.body.style.background ='#b9846f'
+    } else {
+        // boa noite
+        image.src = 'boanoite.jpg'
+        document.body.style.background = '#515154'
+
+
+#aulanot execircio 2
+
+;;;;;;;
+<p>Ano de nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p> 
+                <input type="button" value="verificar" onclick="verifica()">
+
+
+function verifica() {
+    var data = new Date()
+    var ano = data.getFullYear()
+    var fano = document.getElementById('txtano')
+    var res = document.getElementById('res')
+    if (fano.value.length == 0 || fano.value > ano) {
+        window.alert('[ERRO verifique os dads e tente novamente!')
+    } else {
+        var fsex = document.getElementsByName('radsex')
+        var idade = ano - Number(fano.value)
+        var genero = ''
+        var img = document.createElement('img')
+        img.setAttribute('id', 'foto')
+
+        if (fsex[0].checked) {
+            genero = 'Homem'
+            if (idade >= 0 && idade < 10) {
+                //criança
+                img.setAttribute('src', 'fotoexemplo')
+            } else if (idade < 21) {
+                //jovem
+                img.setAttribute('src', 'fotoexemplo')
+            } else if (idade < 50) {
+                //adulto
+                img.setAttribute('src', 'fotoexemplo')
+            } else {
+                //Idoso
+                img.setAttribute('src', 'fotexemplo')
+
+#faz a mesma coisa so que com mulher!
+else if (fsex[1].checked) {
+            genero = 'Mulher'
+
+ res.style.textAlign = 'center'
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+        res.appendChild(img)
+
+
+#aulanot Repetiçoes part1 
+var c = 1
+do {
+    console.log(`Passo ${c}`)
+    c ++ 
+} while (c <= 6)
+
+
+
+#aulanot Repetiçoes part2
+
+console.log('vai começar..')
+for (var c=1; c<=4; c++) {
+    console.log(c)
+
+}
+console.log('fim')
+
+#aulanote exercicio part 5 
+
+function contar() {
+    let ini = window.document.getElementById('txti')
+    let fim = window.document.getElementById('txtf')
+    let pass = window.document.getElementById('txtp')
+    let res = window.document.getElementById('res')
+
+    if (ini.value.length == 0 || fim.value.length == 0 || pass.value.length == 0) {
+        window.alert('[ERRO] faltam dados!')
+        res.innerHTML = 'Impossivel contar!'
+
+    } else {
+        res.innerHTML = 'Contando: <br>'
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(pass.value)
+        if (p <= 0) {
+            window.alert('Passo invalido')
+            p = 1
+        }
+
+        if (i < f) {
+        // emoji: \u{1F603}
+           for (let c = i; c <= f; c += p) {
+              res.innerHTML += `${c} \u{1F449}`
+        }
+        } else {
+            for (let c = i; c >= f; c -= p) {
+                res.innerHTML += `${c} \u{1F449}`
+            }
+        }
+        res.innerHTML += ` \u{1F3C1}`
+
+
+
+#aulanot HTML e CSS mini projeto new
+
+root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+}
+
+ min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.708);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+
+#Responsividade!
+#Imagens 
+
+   min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+              text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+
+     text-align: justify;
+    text-indent: 20px;
+    line-height: 1em;
+
+     list-style-position: inside;
+    columns: 2;
+     list-style-type: '\2714\00a0';
+
+     .externo::after {
+    content: '/00a0\1F517';
+    
+
+#/MODULO 02 terminado
+
+
+
+#aulanot JavaScript tabuada
+
+<select name="tabuada" id="seltab" size="10">
+                <option value="Digite acima"></option>
+            </select>
+
+function tabuada() {
+    let num = window.document.getElementById('txtn')
+    let tab = window.document.getElementById('seltab')
+    if (num.value.length == 0) {
+        window.alert('Por favor, digite um numero!')
+    } else {
+        let n = Number(num.value)
+        let c = 1
+        tab.innerHTML = ''
+        while (c <= 10) {
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value  = `tab${c}`
+            tab.appendChild(item)
+            c++
+
+
+#aulaanot variaveis compostas Vetores
+var a = [1, 2, 3]
+a[3] = 4
+a.push(8)
+a.sort()
+console.log(a.indexOf(4))
+
+for (let pos=0; pos < a.length; pos++){
+    console.log(pos)
+
+for (let pos in a){
+    console.log(pos)
+}
+
+
+#aulaanot Funcoes 
+
+function parimpar(n) {
+    if (n%2 == 0){
+        return 'Par'
+    } else {
+        return 'Impar'
+    }
+}
+
+let v = parimpar(13)
+console.log(v)
+
+let some = function soma(n1=0, n2=0){
+    return n1 + n2
+}
+console.log(some(4, 9))
+
+
+function fatorial(n){
+    if (n == 1){
+        return 1
+    } else {
+        return n * fatorial(n-1)
+    }
+}
+console.log(fatorial(5))
+
+
+#aulnot exercicio
+
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('select#stab')
+let res = document.querySelector('div#res')
+let valores = []
+
+function isNumero(n){
+    if (Number(n) >= 1 && Number(n) <= 100){
+        return true
+    } else {
+        return false
+    }
+
+}
+
+function inLista(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+
+}
+
+
+Lado a lado CSS container !!!!
+
+ .container {
+            display: flex;
+            gap: 20px;
+            height: 600px;
+        }
+        .card {
+            background-color: #eee;
+            padding: 15px;
+            border-radius: 8px;
+            width: 40%;
+
+        }
+
+
+
+
+function Adicionar() {
+    if (isNumero(num.value) && !inLista(num.value, valores)) {
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} Adicionado`
+        lista.appendChild(item)
+        res.innerHTML = ''
+    } else {
+        window.alert('Valor invalido ou ja encotrado na lista.')
+    }
+    num.value = ''
+    num.focus()
+   
+}
+
+function Finalizar(){
+    if (valores.length == 0){
+        window.alert('Adicione valores antes de finalizar!')
+
+    } else {
+        let tot = valores.length
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma = 0
+        let media = 0
+        for (let pos in valores) {
+            soma += valores[pos]
+            if (valores[pos] > maior) 
+                maior = valores[pos]
+            if (valores[pos] < menor)
+                menor = valores[pos]
+        }
+        media = soma / tot
+        res.innerHTML = ''
+        res.innerHTML += `<p>Ao todo, temos ${tot} numeros cadastrados.</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
+        res.innerHTML += `<p>Somando todos os valores, temo ${soma}.</p>`
+        res.innerHTML += `<p>A media dos valores digitados e ${media}.</p>`
+    }
+
+
+  const email = document.getElementById('email').value.trim()
+            const senha = document.getElementById('sen').value.trim()
+            const res = window.document.getElementById('res')
+
+            const tud = nome + email + senha
+    
+            if (!tud) {
+                window.alert('[err], faltou digita algo, digite todos os campos.')
+                setTimeout(() => {
+                    document.body.style.background = 'red'
+                } , 500)   
+                
+
+                setTimeout(() => {
+                    document.body.style.background = 'gray'
+                }, 2000)
+               return
+            }
+
+            if (/\d/.test(nome)) {
+                window.alert('[nome] digite apenas letras.')
+                return
+            }
+
+            if (!email.includes('@') || !email.includes('.')) {
+                window.alert('[email] email invalido, faltou isso @ ou ponto ')
+                return
+            }
+            if (senha.length < 6) {
+                window.alert('[senha] digite 6 caracteres!')
+            }
+            res.innerHTML = 'Cadastro realizado com sucesso.'
+            document.body.style.background = 'green'
+
+
+
+setTimeout(() => {
+             sef.style.background = 'yellow'
+        } , 3000)
+
+setTimeout(() => {
+            document.body.style.background = 'red'
+        } , 100)
+
+           
+#Limpa codigo > document.getElementById('prin').value = ''
+
+ setInterval(Horario, 1000)
+}
+
+for (let i = 1; i <= prin; i++) {
+                soma += i
+                texto += (i < prin) ? `${i} + `:` ${i}` 
+                
+
+
+
+  if (/\d/.test(nu)) {
+                window.alert('Digite apenas letras')
+                return
+            }
+
+            let vogais = 'aeiouAEIOU'
+            let cont = 0
+
+            for (let i=0; i < nu.length; i++) {
+                if (vogais.includes(nu[i])) {
+                    cont++
+                }
+               
+            }
+            res.innerHTML = `Numeros de vogais ${cont}.`
+          
+
+
+
+let num = Math.floor(Math.random() * 20) + 1
+            let tent = 0
+            let opc = Number(prompt('Adivinhe o numero entre 1 e 20 ⬇'))
+
+            while (true) {
+                opc = prompt('Adivinhe o numero entre 1 e 20 ⬇')  
+                tent += 1
+
+                if (opc == num) {
+                    window.alert(`Voce acertou em ${tent} tentativas o numero era ${num} .`)
+                    break   
+                } else if (opc >= 8) {
+                    window.alert(`Voce PERDEU o numero sorteado era ${num}.`)
+                    break
+
+
+
+if (numeros.length >= 5) {
+                let maior = Math.max(...numeros)
+                let menor = Math.min(...numeros)
+                let soma = numeros.reduce((acc, val) => acc + val, 0)
+                let media = soma / numeros.length
+
+
+                res.innerHTML = `Numeros digitados ${numeros.length}. <br> `
+                res.innerHTML += `O maior numero digitado foi ${maior}. <br> `
+                res.innerHTML += `O menor numero digitado foi ${menor}. <br> `
+                res.innerHTML += `A soma de todos os numero foi ${soma}. <br> `
+                res.innerHTML += `A media dos numeros foi ${media.toFixed(2)}. <br>` 
+                
+
+
+#fazer exerico click conte
+
+while (num !== 0) {
+            soma += num
+            cont += 1
+            num = Number(prompt('Digite um numero (Ou Zero para parar)'))
+
+
+
+#/MODULO 03 inicio...
+
