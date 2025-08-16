@@ -46,11 +46,11 @@
 </head>
 <body>
     <header>
-        <h1>Adivinhado de Numero</h1>
+        <h1>Mudanca de cor ao clica</h1>
     </header>
     <section>
         <main>
-           <input type="button" value="Verificar" onclick="Verificar()"> <br>
+           <input type="button" value="Verificar" onclick="Mudacor()"> <br>
 
           
         </main>
@@ -65,26 +65,11 @@
     </footer>
 
     <script>
-        function Verificar() {
-            const res = document.getElementById('res')
-            const num = Math.floor(Math.random() * 10) + 1
-
-            let tent = 0
-
-
-            while (true) {
-                opcao = Number(prompt('Digite um numero entre 1 e 10'))
-                tent += 1
-                
-                if (opcao === num) {
-                    window.alert('Voce acertou!')
-                    break
-                }
-
-            }
-            window.alert(`Foram ${tent} tentativas.`)
-            res.innerHTML = `O numero sorteado foi ${num}.`
-
+        function Mudacor() {
+            const cores = ['red', 'blue', 'green', 'yellow']
+            document.body.style.background = cores[Math.floor(Math.random() * cores.length)]
+            
+          
         
     
         }
