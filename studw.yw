@@ -839,6 +839,12 @@ if (numeros.length >= 5) {
                 
 
 
+const cores = ['red', 'blue', 'green', 'yellow']
+            document.body.style.background = cores[Math.floor(Math.random() * cores.length)]
+
+
+
+
 #fazer exerico click conte
 
 while (num !== 0) {

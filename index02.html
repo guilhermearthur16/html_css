@@ -46,11 +46,20 @@
 </head>
 <body>
     <header>
-        <h1>Mudanca de cor ao clica</h1>
+        <h1>Minha Lista de Tarefas</h1>
     </header>
     <section>
         <main>
-           <input type="button" value="Verificar" onclick="Mudacor()"> <br>
+             Adicione uma tarefa > <input type="text" name="tex" id="tex"> <input type="button" value="Verificar" onclick="Adicionartarefa()"> <br>
+
+
+            <ul>
+
+                <li id="text1">compra leite <input type="button" value="Concluida!" onclick="Concluida()"> ou <input type="button" value="remover!" onclick="Remover()"> <br></li>
+
+                <li id="text2">compra verduras <input type="button" value="concluida" onclick="Concluida()"> ou <input type="button" value="romover" onclick="Remover()"> <br></li>
+
+            </ul>
 
           
         </main>
@@ -65,15 +74,29 @@
     </footer>
 
     <script>
-        function Mudacor() {
-            const cores = ['red', 'blue', 'green', 'yellow']
-            document.body.style.background = cores[Math.floor(Math.random() * cores.length)]
-            
-          
-        
+        function Adicionartarefa() {
+            const tex = document.getElementById('tex').value
+            const res = document.getElementById('tex').value
+
+            let lista = []
+            lista.push(tex)
+           
     
         }
 
+        function Concluida() {
+            const tet = document.getElementById('text1').value
+            tet.style.background = 'cinza'
+            
+            
+        }
+
+        function Remover() {
+            document.style.background = 'red'
+
+        }
+
+        !!! terminar
     </script>
     
 </body>
