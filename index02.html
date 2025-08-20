@@ -46,13 +46,13 @@
 </head>
 <body>
     <header>
-        <h1>Minha Lista de Tarefas</h1>
+        <h1>Veirifcador de Idade</h1>
     </header>
     <section>
         <main>
-            <input type="button" value="Mostrar Aviso">
+             Digite sua idade: <input type="number" name="nu1" id="nu1"> <input type="button" value="Verificar" onclick="Verificador_idad()"> <br>
 
-!!1
+
           
         </main>
         <main id="res">
@@ -66,8 +66,29 @@
     </footer>
 
     <script>
-        function Adicionartarefa() {
-            const tex = document.getElementById('tex').value
+        function Verificador_idad() {
+           const idade = document.getElementById('nu1').value 
+           document.getElementById('nu1').value = ''
+           const res = document.getElementById('res')
+
+           if (!idade) {
+            window.alert('Erro digite o campo!')
+            return
+           }
+
+           if (idade >= 0 && idade <= 12) {
+            res.innerHTML = 'Uma Criança <br> '
+           } else if (idade >= 13 && idade <= 17) {
+            res.innerHTML = 'Um Adolecente <br>'
+           } else if (idade >= 18 && idade <= 59) {
+            res.innerHTML = 'Um Adulto <br> '
+           } else if (idade >= 60) {
+            res.innerHTML = 'Um Idoso <br> '
+           }
+
+           res.innerHTML += `A idade da pessoa e ${idade}.`
+
+
 
         }
       
