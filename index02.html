@@ -1,4 +1,4 @@
-<!--001 JavaScript site ΔΔΔ VVV ⬇⬇⬇⬇|||\\\\/^[a-zA-Z\s]+$/°°°°^^||||||-->
+<!--001 JavaScript site ΔΔΔ VVV ⬇⬇⬇⬇|||\\\\/^[a-zA-Z\s]+$/°°°°^^|????|||||-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +12,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         :root {
-            --cor1:  #27dfdf;
+            --cor1:  #1b6301;
             --cor2:   #0724c9;
             --cor3:  #01af7e;
             --fonte-destaque:Georgia, 'Times New Roman', Times, serif;
@@ -46,14 +46,12 @@
 </head>
 <body>
     <header>
-        <h1>Veirifcador de Idade</h1>
+        <h1>Veirifcador de Numero Par ou Impar</h1>
     </header>
     <section>
         <main>
-             Digite sua idade: <input type="number" name="nu1" id="nu1"> <input type="button" value="Verificar" onclick="Verificador_idad()"> <br>
+            Digite um numero: <input type="number" name="nu1" id="nu1"> <input type="button" value="Verificar" onclick="Verificar()"> <br>
 
-
-          
         </main>
         <main id="res">
          
@@ -66,31 +64,28 @@
     </footer>
 
     <script>
-        function Verificador_idad() {
-           const idade = document.getElementById('nu1').value 
-           document.getElementById('nu1').value = ''
-           const res = document.getElementById('res')
+        function Verificar() {
+            const nu = Number(document.getElementById('nu1').value)
+            document.getElementById('nu1').value = ''
+            const res = document.getElementById('res')
 
-           if (!idade) {
-            window.alert('Erro digite o campo!')
-            return
-           }
+            if (!nu) {
+                window.alert('[erro] Digite algum numero!')
+                return
+            }
 
-           if (idade >= 0 && idade <= 12) {
-            res.innerHTML = 'Uma Criança <br> '
-           } else if (idade >= 13 && idade <= 17) {
-            res.innerHTML = 'Um Adolecente <br>'
-           } else if (idade >= 18 && idade <= 59) {
-            res.innerHTML = 'Um Adulto <br> '
-           } else if (idade >= 60) {
-            res.innerHTML = 'Um Idoso <br> '
-           }
+            if (nu % 2 == 0) {
+                res.innerHTML = 'Numero Par <br>'
 
-           res.innerHTML += `A idade da pessoa e ${idade}.`
-
-
+            } else if (nu % 2 == 1) {
+                res.innerHTML = 'Numero Impar <br>'
+            }
+            res.innerHTML += `O numero e ${nu}.`
 
         }
+        
+
+        
       
        
     </script>

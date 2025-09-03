@@ -1,0 +1,289 @@
+<!--001 JavaScript site ΔΔΔ VVV ⬇⬇⬇⬇|||///\\\\/^[a-zA-Z\s]+$/°°°°^^||||||-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            --bg: #f5f7fb
+            --card: #ffffff
+            --accent: #2b7cff
+            --muted: #6b7280
+            --danger: #e04444
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    
+        <div class="app">
+            <header>
+                <h1>To-Do - Exercicios</h1>
+                <p class="lead">Adicione, edite, remova e marque tarefas. Salvam em LocalStorage.</p>
+            </header>
+            <div class="card">
+                <div class="new-task"></div>
+                <input id="taskInput" type="text" placeholder="Escreva uma nova tarefa e pressione Enter">
+                <button id="addBtn">Adicionar</button>
+            </div>
+            <div class="controls">
+                <div class="filters">
+                    <button data-filter="all" class="active">Tudo</button>
+                    <button data-filter="active">Ativas</button>
+                    <button data-filter="completed">Concluidas</button>
+                </div>
+                <div class="search">
+                    <input id="searchInput" type="text" placeholder="Pesquisar..." style="padding: 6px 8px; border-radius: 8px; border: 1px solid #e6e8ec;">
+                </div>
+            </div>
+
+            <ul id="taskList" class="task-list"></ul>
+
+            <footer class="stats">
+                <div id="counts">O tarefas - 0 pendentes</div>
+                <div><button id="clearCompleted" style="padding: 6px 8px; border-radius: 8px; border: 1px solid #e6e8ec; cursor: pointer;">Limpas concluidas</button></div>
+            </footer>
+
+        
+   
+
+
+
+
+    <footer>
+        <p><strong>CONTINUE TENTADO!!!</strong></p>
+    </footer>
+
+
+    <script>
+        //-*40
+        // JavaScript - Comportamento
+        //-*40
+        // Estrutura de cada tarefa:
+        // {id: string, text: string, completed: boolean, createdAt: number}
+        const STORAGE_KEY = 'todo_execircio_task_V1'
+
+        // elementos 
+
+        const taskInput = document.getElementById('taskInput')
+        const addBtn = document.getElementById('addBtn')
+        const taskList = document.getElementById('taskList')
+        const counts = document.getElementById('counts')
+        const clearCompletedBtn = document.getElementById('clearCompleted')
+        const filterButtons = document.querySelectorAll('.filters button')
+        const searchInput = document.getElementById('searchInput')
+
+        let tasks = loadTask()
+        let filter = 'all'
+        let searchQuery = ''
+
+        render()
+
+        addBtn.addEventListener('click', onADDTask)
+        taskInput.addEventListener('Keydown', (e) => {
+            if (e.key === 'Enter') onAddTask()
+        })
+        clearCompletedBtn.addEventListener('click', () => {
+            tasks = tasks.filter(t => !t.completed)
+            saveTasks()
+            render()
+
+        })
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'))
+                btn.classList.add('active')
+                filter = btn.dataset.filter
+                render()
+
+            })
+        })
+
+        searchInput.addEventListener('input', () => {
+            searchQuery = searchInput.value.trim().toLowerCase()
+            render()
+        })
+
+        function onADDTask() {
+            const text = taskInput.value.trim()
+            if (!text) {
+                // validação: nao permiti vazio
+                taskInput.value = ''
+                taskInput.focus()
+                return
+
+            }
+            const newTask = {
+                id: cryptoRandomId(),
+                text,
+                completed: false,
+                craetedAt: Date.now()
+            }
+            tasks.unshift(newTask) // Adiciona no topo
+            saveTask()
+            taskInput.value = ''
+            render()
+        }
+        
+
+        function render() {
+            // Aplicar filtro e busca
+            let vsible = tasks.slice() // copia
+            if (filter === 'active') visible = visible.filter(t => !t.completed)
+            if (filter === 'completed') visible = visible.filter(t => t.completed)
+            if (searchQuery) visible = visible.filter(t => t.text.toLowerCase().includes(searchQuery))
+
+            // ordenar: pendetes primeiro
+            visible.sort((a, b) => (a.completed === b.completed) ? b.craetedAt - a.craetedAt : (a.completed ? 1 : -1))
+
+            // limpar lista
+            taskList.innerHTML = ''
+
+            // criar DOM
+            for (const t of visible) {
+                const li = document.createElement('li')
+                li.className = 'task' + (t.completed ? 'completed' : '')
+                li.dataset.id = t.id
+
+                const checkbox = document.createElement('input')
+                checkbox.type = 'checkbox'
+                checkbox.checked = t.completed
+                checkbox.addEventListener('change', () => {
+                    toggleCompleted(t.id)
+                })
+                
+                const textDiv = document.createElement('div')
+                textDiv.className = 'text'
+                textDiv.textContent = t.text
+
+                // editar inline ao dar duplo clique
+                textDiv.addEventListener('dblcclick', () => {
+                    startEdit(t.id, textDiv)
+                })
+
+                const actions = document.createElement('div')
+                actions.className = 'actions'
+
+                const editBtn = document.createElement('button')
+                editBtn.textContent = 'Editar'
+                editBtn.addEventListener('click', () => startEdit(t.id, textDiv))
+
+                const removeBtn = document.createElement('button')
+                removeBtn.textContent = 'Remover'
+                removeBtn.className = 'remove'
+                removeBtn.addEventListener('click', () => {
+                    removeTask(t.id)
+                })
+
+                actions.appendChild(editBtn)
+                actions.appendChild(removeBtn)
+
+                li.appendChild(checkbox)
+                li.appendChild(textDiv)
+                li.appendChild(actions)
+
+                taskList.appendChild(li)
+
+            }
+
+            // atualizar contadores
+            const total = task.length
+            const pending = tasks.filter(t => !t.completed).length
+            counts.textContent = `${total} ${total === 1 ? 'tarefa' : 'tarefas'} - ${pending} pendente${pending === 1 ? '' : 's'}`
+
+        
+        }
+            function startEdit (id, textDiv) {
+                const task = tasks.find(t => !t.id === id)
+                if (!task) return
+                // criar input no lugar do texto
+                const input = document.createElement('input')
+                input.type = 'text'
+                input.value = task.text
+                input.style.width = '100%'
+                input.style.padding = '6px'
+                input.style.borderRadius = '6px'
+                input.style.border = '1px solid #e6e8ec'
+                textDiv.replaceWith(input)
+                input.focus()
+
+                // salvar ao sair ou ao pressionar Enter, cancelar com Esc
+                const finish = () => {
+                    const newText = input.value.trim()
+                    if (newText) {
+                        task.text = newText
+                        saveTasks()
+
+                    }
+                    render()
+
+                }
+                const cancel = () => render()
+
+                input.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') finish()
+
+                    if (e.key === 'Escape') cancel()
+                })
+            input.addEventListener('blur', finish)
+
+            }
+            function toggleCompleted(id) {
+                const t = tasks.find(x => x.id === id)
+                if (!t) return
+                t.completed = !t.completed
+                saveTasks()
+                render()
+            }
+
+            function removeTask(id) {
+                tasks = tasks.filter(t => t.id !== id)
+                saveTasks()
+                render()
+            }
+
+            function loadTask() {
+                try {
+                    const raw = localStorage.getItem(STORAGE_KEY)
+                    if (!raw) return []
+                    const parsed = JSON.parse(raw)
+                    if (!Array.isArray(parsed)) return []
+                    return parsed
+                } catch (err) {
+                    console.error('Erro ao carrgar tarefas:', err)
+                    return []
+                }
+            }
+            // gerador simples de id usando crypto (mais seguro que Date.now)
+            function cryptoRandomId() {
+                // 8 bytes -> 16 hex chars
+                return Array.from(window.crypto.getRandomValues(new Uint8Array(8))).map(b => b.toString(16).padStart(2, '0')).join('')
+
+            }
+            // carrgar algumas tarefas de exemplo ao iniciar se estiver vazio (opcional)
+            if (tasks.length === 0) {
+                tasks = [
+                    { id: cryptoRandomId(), text: 'Estudar JavaScript - exercicio', completed: false, craetedAt: Date.now() - 1000 * 60 * 60},
+                    { id: cryptoRandomId(), text: 'Fazer revisao de matematica', completed: true, craetedAt: Date.now() - 1000 * 60 * 60 * 5}
+                ]
+                saveTasks()
+                render()
+            }
+
+
+
+    </script>
+    
+</body>
+</html>
+
+
