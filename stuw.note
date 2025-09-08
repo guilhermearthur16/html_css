@@ -1037,3 +1037,14 @@ data:06/09/2025 >
             background-repeat: repeat-x(imagem fica na horizontal dos lados)  repeat-y(imagem fica na vertical pra cima e pra baixo);
 
 
+#aulaanot Configurando posicao imagem//07/09/25
+
+ body {
+            height: 98vh;
+            border: 1px dashed black;
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+
