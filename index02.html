@@ -4,64 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo fixo d tela</title>
+    <title>Alinhamento vertical</title>
     <style>
-        body {
-            height: 100vh;
-            /* background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-
-            /* Anota no cadeno: Shorthand - background
-            color > image > position > repeat > [size!!]
-            > attachment
-
-            */
-
-            background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed ;
-            background-size: cover; 
-        }
-       
-
-        main {
-            background-color: white;
-            max-width: 400px;
+        section#container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
             padding: 10px;
-            margin: auto;
-            border: 1px solid black;
-            border-radius: 12px;
+            background-color: purple;
+
         }
-      
-      
+
+        article#conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+        }
+
 
     </style>
 </head>
 <body>
-    <main>
-        <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facilis ipsam eos aut non praesentium nisi temporibus sit natus, dolore quibusdam reprehenderit aliquid nam iure doloribus quam commodi provident odit?
+    <section id="container">
+        <article id="conteudo">
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam eum ducimus dolore exercitationem? Ab perferendis eaque accusantium, eveniet repellendus alias tenetur quia quam quasi modi vitae ratione quidem facilis!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam tenetur, fugit optio nihil laborum cumque similique est natus dicta vero rerum nobis, magni omnis minus dolores nulla! Eaque, beatae
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi non doloribus illo debitis impedit quasi magni, in suscipit maxime ipsum voluptate delectus tempora, veritatis at soluta eaque iusto recusandae voluptatum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eaque odit ut assumenda expedita, aspernatur necessitatibus natus voluptatum suscipit quo dolores minima, quod quidem illum. Ipsam officiis voluptas aut ipsum.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa natus, minus hic voluptates ducimus perferendis inventore totam facere placeat amet ipsa cupiditate quas quaerat aliquam perspiciatis, laborum, sit eum distinctio?
-
-            
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam eum ducimus dolore exercitationem? Ab perferendis eaque accusantium, eveniet repellendus alias tenetur quia quam quasi modi vitae ratione quidem facilis!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam tenetur, fugit optio nihil laborum cumque similique est natus dicta vero rerum nobis, magni omnis minus dolores nulla! Eaque, beatae
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi non doloribus illo debitis impedit quasi magni, in suscipit maxime ipsum voluptate delectus tempora, veritatis at soluta eaque iusto recusandae voluptatum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eaque odit ut assumenda expedita, aspernatur necessitatibus natus voluptatum suscipit quo dolores minima, quod quidem illum. Ipsam officiis voluptas aut ipsum.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa natus, minus hic voluptates ducimus perferendis inventore totam facere placeat amet ipsa cupiditate quas quaerat aliquam perspiciatis, laborum, sit eum distincti
-
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi reiciendis cumque neque temporibus, laborum nemo aperiam inventore adipisci pariatur dolore eius at ratione quasi minus, ullam impedit. Debitis, architecto. Tenetur!
-
-        </p>
-    </main>
+        </article>
+    </section>
     
 </body>
 </html>
+
       
