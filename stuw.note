@@ -1054,5 +1054,29 @@ ody {
             background-image: url(imagens/wallpaper005.jpg);
             background-position: left top;
             background-repeat: no-repeat;
-            
+
+
+#aulanot Mudando tamanho da imagem
+
+ body {
+            background-color: black;
+            background-image: url(imagens/wallpaper005.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 12px;
+        }
+
+
+
+
+        
 
