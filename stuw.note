@@ -1127,7 +1127,34 @@ ody {
 
 
 
-#
+#aulanot Tabelas data:12/09/25
+
+ border-collapse: collapse;
+
+
+  <!--
+    HIERARQUIA DE TABELAS
+    Table = tabela
+    table ROW = linha da tabela
+    Table HEADER = cabeçalho de tabela
+    Table DATA = dado da tabela
+    
+    -->
+
+
+    <table>
+        <tr>
+            <!--Primeira linha   -->
+             <td>A1</td>
+             <td>B1</td>
+             <td>C1</td>
+        </tr>
+
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
 
 
         

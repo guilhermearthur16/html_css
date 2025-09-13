@@ -1,55 +1,77 @@
+<!--001 JavaScript site ΔΔΔ VVV ⬇⬇⬇⬇|||///\\\\/^[a-zA-Z\s]+$/°°°°^^||||||-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Execircios Fundo de imagem</title>
-    <style>
+    <title>Tabelas</title>
+    <style> 
         body {
-            background-image: url(imagens/wallpaper001.jpg);
-            font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+
         }
-        div.quadrado {
-            display: inline-block;
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        tr {
+            background-color: gray;
+        }
+
+        td {
             border: 1px solid black;
-            border-radius: 10px;
-            background-color: lightgray;
-            width: 300px;
-            height: 300px;
+            padding: 8px;
         }
 
-        div#q1 {
-            background-color: rgba(6, 6, 137, 0.968);
+        td.dado {
+            background-color: yellow;
         }
-
-        div#q2 {
-            background-image: linear-gradient(to bottom, yellow, red);
-        }
-
-        div#q3 {
-            background-image: url('imagens/pattern003.png');
-        }
-
-
-
-
-        footer {
-            font-size: 22px;
-        }
-
 
     </style>
 
 </head>
 <body>
-    <div class="quadrado" id="q1"></div>
+    <h1>Minha primeira tabela</h1>
+    <!--
+    HIERARQUIA DE TABELAS
+    Table = tabela
+    table ROW = linha da tabela
+    Table HEADER = cabeçalho de tabela
+    Table DATA = dado da tabela
+    
+    -->
 
-    <div class="quadrado" id="q2"></div>
 
-    <div class="quadrado" id="q3"></div>
+    <table>
+        <tr>
+            <!--Primeira linha   -->
+             <td>A1</td>
+             <td>B1</td>
+             <td>C1</td>
+        </tr>
 
-    <footer></footer>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
 
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+
+        </tr>
+
+        <tr>
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+        
+    </table>
     
 </body>
 </html>
