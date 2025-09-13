@@ -1157,5 +1157,10 @@ ody {
         </tr>
 
 
+/#Alinhamentos Tabelas 
+ text-align: center; /*Alinhamento horizontal */
+            vertical-align: middle; /* Alinhamento vertical */
+
+/
         
 
