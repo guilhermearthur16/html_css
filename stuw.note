@@ -1162,5 +1162,74 @@ ody {
             vertical-align: middle; /* Alinhamento vertical */
 
 /
+
+
+#aulaanot 16/09/25
+         <!--
+    Anatomia para tabelas grandes
+    Table :> Thead > Tbody > Tfoot
+ 
+
+ 
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Populacao</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Sao paulo</td>
+                <td>45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerias</td>
+                <td>21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td>0000</td>
+            </tr>
+
+
+        </tfoot>
+
+
+#aulaanot 16/09/2025 Efeito zebrado mais tabelas
+
+
+ td.num {
+            text-align: right;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.589);
+        }
+
+        tbody > tr:nth-child(2n) Ou odd ou 2n-1 ou even.{
+            background-color: rgba(122, 122, 122, 0.761);
+        }
+
+
+#aulanto  Mesclagem de tabelas 
+
+(linha) > rowspan="3"  colspan="2" < (COluna)
+
+
         
 
