@@ -14,8 +14,9 @@
         table {
             text-align: center;
         }
+       
 
-        td {
+        td, th {
             padding: 18px;
             border: 1px solid black;
         }
@@ -25,78 +26,92 @@
 
 </head>
 <body>
-    <!--Video > Exemplo de tabela completa 10:30
+    <!--Video > Desafios part2
     Era pra ter usado: Thead > Tbody > Tr > Th > td!!!
     
     -->
 
 
     <table>
-        <tr>
-            <td>Grupo</td>
-            <td colspan="1">Nomes</td>
-            <td colspan="3">Filmes</td>
-            
-
-           
-        </tr>
-
-        <tr>
-            <td rowspan="3">Mulheres</td>
-            <td>Ana Maria Santos</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-           
-
-        </tr>
-
-        <tr> 
-            <td>Beatriz Souza</td>
-            <td>Hulk</td>
-            <td>Inception</td>
-            <td>Batman</td>
-            
-           
-
-        </tr>
-
-        <tr>
-            <td>Claudia Melo</td>
-            <td>Oblivion</td>
-            <td>Matrix</td>
-            <td>Big Hero</td>
-        </tr>
-
-        <tr>
-            
-        </tr>
-
-        <tr>
-            <td rowspan="3">Homens</td>
-            <td>Bruno Mendonça</td>
-            <td>Intocaveis</td>
-            <td>Amnesia</td>
-            <td>Gladiador</td>
+        <thead>
+            <tr>
+                <th scope="col"><strong>Grupo</strong></td>
+                <td scope="col" ><strong>Nomes</strong></td>
+                <td colspan="3"  scope="colgroup" ><strong>Filmes</strong></td>
             
             
+            </tr>
+        </thead>
+
+        <tfoot> 
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+
+    
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+    
+    
+            </tr>
+    
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+    
+    
+    
+            </tr>
+    
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+    
+            <tr>
+    
+            </tr>
+    
+            <tr>
+                <th rowspan="3"  scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocaveis</td>
+                <td>Amnesia</td>
+                <td>Gladiador</td>
+    
+    
+    
+    
+            </tr>
+    
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+    
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
 
 
-        </tr>
-
-        <tr>
-            <td>Daniel Lourenço</td>
-            <td>Wall-E</td>
-            <td>Oldboy</td>
-            <td>Dangal</td>
-        </tr>
-
-        <tr>
-            <td>Fabiano Mota</td>
-            <td>Star Wars 5</td>
-            <td>Taxi Driver</td>
-            <td>Toy Story</td>
-        </tr>
+       </tbody>
 
     </table>
     
