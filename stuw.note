@@ -1234,11 +1234,105 @@ ody {
 
 
 
+#aulanot  Agrupamento de colunas
+
+
+   caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+
+        th, td {
+             border: 1px solid black;
+             padding: 8px;
+             font-weight: bold;  !!!
+
+
+table>
+        <colgroup>
+            <col class="Cnome">
+            <col class="Cgrupo" span="2">
+            <col class="Cprof">
+        </colgroup>
+
+        style > col.Cnome {
+            background-color: rgba(72, 207, 207, 0.848);
+        }
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo </th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+
+
+
+
+
 #aulanot Exemplo de tabela completo 20/09/25
 
 
 <!--Video > Exemplo de tabela completa
     Era pra ter usado: Thead > Tbody > Tr > Th > td!!!
     
+
+
+
+
+#aualnot Tabelas Reposivas !! ultima aula do Modulo 3 < FIM.
+Data:27/09/2025
+
+  caption {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(245, 223, 193);
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+
+
+        <div id="container"> Tabelas grandes e reposinvas!!!
+        <table>
+            <caption>Tabelas Reponsivas</caption>
+        <thead>
+
+
+
+
+#aulanot MODULO 4  Data: 27/09/2025 !:  
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
         
 

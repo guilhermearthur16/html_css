@@ -7,114 +7,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio de Tabelas</title>
+    <title>Tabelas Reposinvas</title>
     <style>
-
         body {
             font-family: Arial, Helvetica, sans-serif;
+        }
 
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
         }
 
         caption {
             font-size: 1.3em;
-            font-weight: bolder;
-            padding: 10px;
+            font-weight: bold;
         }
 
-        table {
-            width: 500px;
-            border-collapse: collapse;
-
+        tr:nth-child(even) {
+            background-color: rgb(245, 223, 193);
         }
 
-        th, td {
-             border: 1px solid black;
-             padding: 8px;
+        div#container {
+            overflow-x: auto;
         }
-
-        col.Cnome {
-            background-color: rgba(72, 207, 207, 0.848);
-        }
-        col.Cgrupo {
-            background-color: rgba(166, 87, 18, 0.823);
-        }
-        col.Cprof {
-            background-color: rgba(30, 107, 5, 0.823);
-        }
-
-
+        
 
     </style>
 
+
 </head>
 <body>
-    <!--Video > Tabelas responsiva-->
 
-    <h1>Exercicio de tabelas</h1>
+    <h1>Tabelas em tela pequenas</h1>
 
-    <table>
-        <colgroup>
-            <col class="Cnome">
-            <col class="Cgrupo" span="2">
-            <col class="Cprof">
-        </colgroup>
-
-        <caption>Cadastro</caption>
-
-        <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Sexo </th>
-            <th scope="col">Idade</th>
-            <th scope="col">Profissao</th>
-        </tr>
-
-        <tr>
-            <td>Ana maria </td>
-            <td>F</td>
-            <td>25</td>
-            <td>Jornalista</td>
-        </tr>
-
-        <tr>
-            <td>Claudio</td>
-            <td>M</td>
-            <td>34</td>
-            <td>Programador</td>
-        </tr>
-
-        <tr>
-            <td>Gustavo</td>
-            <td>M</td>
-            <td>29</td>
-            <td>Professor</td>
-        </tr>
-
-        <tr>
-            <td>Helio</td>
-            <td>M</td>
-            <td>43</td>
-            <td>Vendedor</td>
-        </tr>
-
-        <tr>
-            <td>Maria</td>
-            <td>F</td>
-            <td>42</td>
-            <td>Medica</td>
-        </tr>
-
-        <tr>
-            <td>Otavio</td>
-            <td>M</td>
-            <td>32</td>
-            <td>Nutricionista</td>
-        </tr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam optio provident voluptatem! Reiciendis impedit nam amet obcaecati consequatur! Beatae hic voluptate quisquam reiciendis labore laudantium dolore praesentium doloremque blanditiis!</p>
 
 
-    </table>
-
+    <div id="container">
+        <table>
+            <caption>Tabelas Reponsivas</caption>
+        <thead>
+        
+                <tr>
+                    <th>Porduto</th>
+                    <th>jan</th>
+                    <th>fev</th>
+                    <th>marc</th>
+                    <th>abri</th>
+                    <th>maio</th>
+                    <th>junho</th>
+                    <th>julho</th>
+                    <th>agosto</th>
+                    <th>setem</th>
+                    <th>outubr</th>
+                    <th>novem</th>
+                    <th>dezembro</th>
+                </tr>
+        </thead>
+        </table>
+    </div>
     
 </body>
 </html>
 
 
+
+  
