@@ -7,69 +7,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas Reposinvas</title>
+    <title>JavaScript</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        table {
-            border-collapse: collapse;
+        header {
+            text-align: center;
         }
 
-        th, td {
+        section {
+            background-color: gray;
+            color: white;
+            width: 500px;
             border: 1px solid black;
-            padding: 12px;
+            margin: auto;
+            box-shadow: 1px 1px 4px;
+            border-radius: 10px;
         }
 
-        caption {
-            font-size: 1.3em;
-            font-weight: bold;
+        div {
+            padding: 10px;
         }
-
-        tr:nth-child(even) {
-            background-color: rgb(245, 223, 193);
-        }
-
-        div#container {
-            overflow-x: auto;
-        }
-        
-
+    
     </style>
 
 
 </head>
 <body>
+    
+        <header>
+            <h1>Exercicio de JavaScript</h1>
+        </header>
 
-    <h1>Tabelas em tela pequenas</h1>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam optio provident voluptatem! Reiciendis impedit nam amet obcaecati consequatur! Beatae hic voluptate quisquam reiciendis labore laudantium dolore praesentium doloremque blanditiis!</p>
 
 
-    <div id="container">
-        <table>
-            <caption>Tabelas Reponsivas</caption>
-        <thead>
+        <section>
+    
+            <div>
+    
+                Digite um numero: <input type="number" name="nu1" id="nu1"> <input type="button" value="Verificar" onclick="Verificar()">
+    
+            </div>
+
+
+            <div id="res"></div>
+
+        </section>
+
         
-                <tr>
-                    <th>Porduto</th>
-                    <th>jan</th>
-                    <th>fev</th>
-                    <th>marc</th>
-                    <th>abri</th>
-                    <th>maio</th>
-                    <th>junho</th>
-                    <th>julho</th>
-                    <th>agosto</th>
-                    <th>setem</th>
-                    <th>outubr</th>
-                    <th>novem</th>
-                    <th>dezembro</th>
-                </tr>
-        </thead>
-        </table>
-    </div>
+
+
+
+        <script>
+
+            function Verificar() {
+                const num = Number(document.getElementById('nu1').value)
+                const res = document.getElementById('res')
+
+
+                if {
+                    
+                }
+
+
+
+
+            }
+
+
+
+
+
+        </script>
+
+    
+
+  
     
 </body>
 </html>
