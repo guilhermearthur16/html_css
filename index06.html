@@ -11,6 +11,7 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
         }
 
         header {
@@ -67,9 +68,19 @@
                 const res = document.getElementById('res')
 
 
-                if {
+                if (!num) {
+                    window.alert('[err] Digite algum numero!')
+                    return 
                     
                 }
+
+                if (num % 2 == 0) {
+                    res.innerHTML = 'O numero e Par <br>'
+                } else if (num % 2 == 1) {
+                    res.innerHTML = 'O numero e Impar <br>'
+                }
+                res.innerHTML += `O Numero e  ${num}. `
+
 
 
 
