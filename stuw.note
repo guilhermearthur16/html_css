@@ -1316,13 +1316,49 @@ Data:27/09/2025
 
 #aulanot MODULO 4  Data: 27/09/2025 !:  
 
+anotacao > 30/09/25
+iframe I >: inlane(quadroes em linha)
 
 
 
+        iframe {
+            width: 400px;
+            border: 1px dashed black;
+        }
+
+-
+ <!--Tamanho padrao 300x150-->
+
+        <p>Acessando o site do 
+           <iframe src="https://www.cursoemvideo.com" frameborder="0" height="300px" scollig="auto"> <a href="https://www.cursoemvideo.com" target="_blank"></a>Cursoemvideo </iframe> 
+            para aprender a programar.</p>
+
+-
+
+iframe {
+            display: block;
+            margin: auto;
+        }
+        (quando tiver dentro de pasta barra e nome certo no > src)
+ <iframe src="index03.html" frameborder="0" height="500px" width="500px">Tabela</iframe>
+        <!--Usou a tabela de exempplo  ^ -->
 
 
+quatro primeiras aulas. ^
+-
 
 
+#aulanot Navegacao no iframe
+
+<iframe src="" name="frame">
+        <p>Infelimente seu navegador nao e compativel com isso.</p>
+
+
+    <ul>
+        <li><a href="index03.html" target="frame">Primeira pagina</a></li>
+        <li><a href="index04.html" target="frame">Segunda pagina</a></li>
+        <li><a href="index05.html" target="frame">Terceira pagina</a></li>
+    </ul>
 
         
         
