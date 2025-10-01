@@ -1348,7 +1348,7 @@ quatro primeiras aulas. ^
 -
 
 
-#aulanot Navegacao no iframe
+#aulanot Navegacao no iframe  30/09/2025
 
 <iframe src="" name="frame">
         <p>Infelimente seu navegador nao e compativel com isso.</p>
@@ -1362,6 +1362,51 @@ quatro primeiras aulas. ^
 
         
         
+
+
+#aulanot Conteudo no iframe por codigo 01/10/2025
+
+  <iframe name="frame"  srcdoc="<h1>Escolha uma das opcoes acima</h1> <img src="#" alt="#">>
+
+
+
+
+
+#aulanot Inconvenientes do iframe 01/10/25
+
+Explicacao importante sobre iframes
+
+
+
+
+
+#aualnot Tornando iframes mais seguros 01/10/25
+
+
+site teste principal 'formulario'
+    <form action="cadastro.php">
+        <p>
+            Nome: 
+            <input type="text" name="nome" id="nome">
+            <input type="submit" value="Cadastrar">
+        </p>
+
+
+No outro site:
+ <iframe src="index03.html" frameborder="0" sandbox="allow-popups-to-escape-sandbox allow-forms allow-same-origin allow-scripts" referrerpolicy="no-referrer + -when-dowgrade">
+        <p>Seu navegador nao e compativel</p>
+    </iframe>
+
+
+
+
+#aualnot Dicas para iframes melhores 01/10/25
+
+
+
+
+
+
 
 
 
