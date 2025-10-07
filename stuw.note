@@ -1430,6 +1430,51 @@ No outro site:
 !
    
 
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 627px;
+    width: 312px;
+    background: url('/imagens/frame-iphone.png') no-repeat;
+}
+
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 472px;
+}
+
+
+section#rede_soc img {
+    width: 50px;
+    margin: 8px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px black;
+    box-sizing: border-box;
+
+}
+
+section#rede_soc {
+    text-align: right;
+}
+
+section#rede_soc img:hover {
+    border: 2px solid rgb(206, 204, 204);
+    transform: translate(-3px, -3px);
+    box-shadow: 4px 4px 8px black;
+
+}
+
+
+
+
+#aualnot Formularios em HTML5 07/10/25
+
 
 
 
