@@ -1475,6 +1475,11 @@ section#rede_soc img:hover {
 
 #aualnot Formularios em HTML5 07/10/25
 
+    <form action="#">
+        <p>Nome: <input type="text" name="nom" id="nom"> </p>
+        <p>Sobrenome: <input type="text" name="sbn" id="sbn"></p>
+        <p> <input type="submit" value="Verificar"> </p>
+    </form>
 
 
 
