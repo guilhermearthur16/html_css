@@ -14,7 +14,7 @@
 
     </style>
 
-    <!--Video >  Formularios-->
+    <!--Video >  Criando caixas de texto e de senha -->
 
 </head>
 <body>
@@ -25,10 +25,18 @@
 
     </header>
 
-    <form action="#">
-        <p>Nome: <input type="text" name="nom" id="nom"> </p>
-        <p>Sobrenome: <input type="text" name="sbn" id="sbn"></p>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inom">Nome:</label> <input type="text" name="nom" id="inom"> </p>
+        <p><label for="isbn">Sobrenome:</label> <input type="text" name="sbn" id="isbn"></p>
         <p> <input type="submit" value="Verificar"> </p>
+
+        <!--Aprende sobre HTTPS depois
+
+        GET = Dados NAO sensiveis! Mais de 3000 bit, Nao usa
+        POST = Dados Sensiveis ! Mais de 3000 bit, Sim usa 
+        
+        -->
+
     </form>
 
     
