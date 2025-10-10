@@ -1514,9 +1514,70 @@ section#rede_soc img:hover {
 
 
 
+#aualnot Criando caixas de texto e de senha 10/10/25
+IMPORTANTE
+  <form action="cadastro.php" method="post" autocomplete="off">
+
+        <p>
+            <label for="iusiu">Usarios:</label>
+             <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="nome d usuario"  autocomplete="username">
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" placeholder="minimo 8 letras" size="15" autocomplete="current-password">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
 
 
 
+
+
+
+#aulanot Elementos number, month, date e time em form
+
+
+  <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="imedia">Media:</label>
+            <input type="number" name="num" id="inum" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
+        </p>
+
+        <p>
+            <label for="imes">Mes:</label>
+            <input type="month" name="mes" id="imes" value="2024-04">
+        </p>
+
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+
+        <p>
+            <label for="ihora">Hora da prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+
+
+#aualnot
 
 
         

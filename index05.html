@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicios</title>
+    <title>Formulsrios</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -14,30 +14,55 @@
 
     </style>
 
-    <!--Video >  Criando caixas de texto e de senha -->
+    <!--Video >  Elementos number, month, date e time em form-->
 
 </head>
 <body>
 
     <header>
     
-        <h1>Oi</h1>
+        <h1>Teste de formularios</h1>
 
     </header>
 
-    <form action="cadastro.php" method="post" autocomplete="off">
-        <p><label for="inom">Nome:</label> <input type="text" name="nom" id="inom"> </p>
-        <p><label for="isbn">Sobrenome:</label> <input type="text" name="sbn" id="isbn"></p>
-        <p> <input type="submit" value="Verificar"> </p>
+    <form action="cadastro.php" method="get" autocomplete="on">
 
-        <!--Aprende sobre HTTPS depois
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
 
-        GET = Dados NAO sensiveis! Mais de 3000 bit, Nao usa
-        POST = Dados Sensiveis ! Mais de 3000 bit, Sim usa 
-        
-        -->
+        <p>
+            <label for="imedia">Media:</label>
+            <input type="number" name="num" id="inum" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
+        </p>
+
+        <p>
+            <label for="imes">Mes:</label>
+            <input type="month" name="mes" id="imes" value="2024-04">
+        </p>
+
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+
+        <p>
+            <label for="ihora">Hora da prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
 
     </form>
+
+
+
+   
 
     
 </body>
