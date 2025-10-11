@@ -29,7 +29,7 @@
         }
 
         div {
-            padding: 10px;
+            padding: 4px;
         }
     
     </style>
@@ -40,15 +40,22 @@
     
         <header>
             <h1>Exercicio de JavaScript</h1>
+            <h2>Formularios simples</h2>
         </header>
 
 
 
         <section>
+
+            <div>
+                <label for="inom" >Digite seu nome:</label>
+                <input type="text" name="nom" id="inom" required autocomplete="off" placeholder="Seu Nome">
+            
+            </div>
     
             <div>
     
-                Digite um numero: <input type="number" name="nu1" id="nu1"> <input type="button" value="Verificar" onclick="Verificar()">
+                <label for="inu1">Digite sua idade:</label> <input type="number" name="nu1" id="inu1" required autocomplete="off" placeholder="Sua idade"> <br> <input type="button" value="Verificar" onclick="Verificar()">
     
             </div>
 
@@ -64,11 +71,14 @@
         <script>
 
             function Verificar() {
-                const num = Number(document.getElementById('nu1').value)
+                const num = Number(document.getElementById('inu1').value)
+                document.getElementById('inu1').value = ''
+                const nom = document.getElementById('inom').value
+                document.getElementById('inom').value = ''
                 const res = document.getElementById('res')
 
 
-                if (!num) {
+                if (!num && num == 0) {
                     window.alert('[err] Digite algum numero!')
                     return 
                     
@@ -79,7 +89,8 @@
                 } else if (num % 2 == 1) {
                     res.innerHTML = 'O numero e Impar <br>'
                 }
-                res.innerHTML += `O Numero e  ${num}. `
+                res.innerHTML += `Seu nome e ${nom} <br>`
+                res.innerHTML += `Sua idade e  ${num}. `
 
 
 
