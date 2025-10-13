@@ -17,8 +17,43 @@
 </head>
 <body>
 
-    <h1>Compatibilidade com navegadores</h1>
-    <!--Video Formularios com telefone e e-mail-->
+    <h1>Fromularios com telefone e e-mail</h1>
+    <!--Video Checkbox e Radio button em html
+
+    > Expressoes regulares Estuda mais pra frente!
+    
+    -->
+
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" minlength="15" maxlength="25" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^[0-9]{4}-[0-9]{4}" placeholder="(xx)xxxx-xxxx">
+            </p>
+
+        </fiedset>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+      
+
+
+    </form>
+
+
 
 
    
