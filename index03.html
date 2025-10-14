@@ -17,38 +17,31 @@
 </head>
 <body>
 
-    <h1>Checkbox e Radio button em html</h1>
-    <!--Video Checkbox e Radio button em html
+    <h1>Elementos color, range e file em HTMLl</h1>
+    <!--Video select  datalist textarea em html
 
     > Expressoes regulares Estuda mais pra frente!
     
     -->
 
 
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
-        <fieldset>
-            <legend>Sexo</legend> 
-            <!--input radio mesmo NAME, ID Diferente-->
-            <input type="radio" name="sx" id="isxmas" value="M">
-            <label for="isxmas">Masculino</label>
-            <input type="radio" name="sx" id="isxfem" checked value="F">
-            <label for="isxfem">Feminino</label>
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
 
+        <p>
+            <label for="inivel">Nivel de Satisfacao:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
 
-        </fieldset>
+        <p>
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
 
-
-
-
-        <fieldset>
-            <legend>Esportes Favoritos</legend>
-            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label>
-            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label>
-            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natacao</label>
-            <input type="checkbox" name="esping" id="iesping"><label for="iesping">Ping Pong</label>
-        </fieldset>
-        
 
         <p>
             <input type="submit" value="Enviar">
@@ -58,9 +51,6 @@
     </form>
 
 
-
-
-   
 
     
 </body>
