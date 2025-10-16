@@ -1682,8 +1682,58 @@ IMPORTANTE
 
 #aulanot Video select  datalist textarea em html
 
+   <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Regiao Sudeste">
+                    <option value="MG">Minas gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Regiao Norte">
+                    <option value="PB">Paraiba</option>
+                    <option value="CE">Ceara</option>
+                    <option value="PI">Piaui</option>
+                </optgroup>
+                <optgroup label="Regiao Centro">
+                    <option value="TO">Tocantins</option>
+                    <option value="GO">Goiania</option>
+                    <option value="BA">Bahia</option>
+
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissao</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Adimistrador</option>
+                <option value="Cont">Contador</option>
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Prof">Professor</option>
+
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mesagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="20" rows="4"></textarea>
+        </p>
 
 
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+
+
+#aulanot  Elemento output em formularios HTML
 
 
 
